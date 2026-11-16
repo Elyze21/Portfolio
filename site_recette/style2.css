@@ -1,0 +1,328 @@
+body {
+    background-color: #F5E9DF;
+    background-image: url("image/fond_site.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin: 0;
+}
+
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002C4A;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    color: #C7472E;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #002C4A;
+    text-align: center;
+    margin: 20px;
+}
+
+h3 {
+    color: #002C4A;
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.recettes {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+} 
+
+.recettes figure {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin: 15px;
+    width: 300px;
+}
+
+.image-container{
+    overflow: hidden;
+}
+
+.image-container img{
+    transition: transform 0.5s;
+}
+
+.image-container:hover img{
+    transform: scale(1.2);
+}
+
+.recettes a {
+    color: black;
+    padding: 10px;
+}
+
+#mesRecettes {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.imageRecette img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.flecheGauche,
+.flecheDroite {
+    background-color: #002C4A;
+    border-radius: 50%;
+}
+
+
+table {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid #002C4A;
+}
+th {
+    background-color: #002C4A;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+td {
+    padding: 15px;
+}
+
+.liste li{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #002C4A;
+}
+
+.resultat {
+    text-align: center;
+
+}
+.resultat img{
+    margin-top: 20px;
+}
+
+.histoire {
+    width: 75%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.heritage img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+footer {
+    background-color: #002C4A;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.footer-contenu h2 {
+    color: white;
+    margin: 10px;
+}
+
+.footer-contenu p {
+    margin: 10px;
+}
+
+.footer-liens {
+    margin: 20px;
+}
+
+.footer-liens a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.footer-liens a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    body {
+        background-size: cover;
+        background-position: center top;
+    }
+
+
+
+
+    header {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav img {
+        height: 60px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 6px;
+    }
+
+
+
+
+
+    h1 {
+        font-size: 26px;
+        margin-top: 25px;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 15px;
+    }
+
+    h3 {
+        font-size: 17px;
+        padding: 20px 15px 0 15px;
+    }
+
+
+
+
+    .recettes {
+        flex-direction: column;
+        padding-top: 25px;
+        width: 100%;
+    }
+
+    .recettes figure {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .recettes img {
+        max-width: 100%;
+    }
+
+
+
+
+
+    #mesRecettes {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+
+
+
+
+
+    table {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    th {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    td ul {
+        padding-left: 18px;
+    }
+
+
+
+
+
+
+
+
+    .liste {
+        padding: 0 15px;
+    }
+
+    .liste li {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Images */
+    .resultat img {
+        max-width: 90%;
+    }
+
+    .heritage img {
+        max-width: 90%;
+    }
+
+
+
+
+
+
+
+
+    .histoire {
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    .histoire p {
+        font-size: 15px;
+    }
+
+    .fin {
+        font-size: 25px;
+    }
+}
